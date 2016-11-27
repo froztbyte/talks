@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Where am I and what is this?</h1>
+				</section>
+				<section>
+					<p class="fragment">Infrastructure That Goes Bump In The Night</p>
+					<p class="fragment">JP Viljoen</p>
+					<p class="fragment">@froztbyte</p>
+					<p class="fragment">github.com:froztbyte/devopsdays-cpt-2016</p>
+				</section>
+				<section>What am I going to cover here?</section>
+				<section>
+					<ul>
+						<li class="fragment">Common ways to have the problem</li>
+						<li class="fragment">Common problems with the ways</li>
+						<li class="fragment">Common issues</li>
+						<li class="fragment">Words of advice</li>
+					</ul>
+				</section>
+				<section>You built a product</section>
+				<section>
+					You care (probably)
+					<p class="fragment">"The argument that system monitoring is just a nice to have, and not really a core requirement for operational readiness, dissipates quickly when a critical application goes down with no warning"</p>
+					<small class="fragment">cf <a href="https://en.wikipedia.org/wiki/System_monitoring">Wikipedia - System Monitoring</a></small>
+				</section>
+				<section>
+					How do you care?
+					<p class="fragment">"Condition monitoring (or, colloquially, CM) is the process of monitoring a parameter of condition in machinery (vibration, temperature etc.), in order to identify a significant change which is indicative of a developing fault"</p>
+					<small class="fragment">cf <a href="https://en.wikipedia.org/wiki/Condition_monitoring">Wikipedia - Condition monitoring</a></small>
+				</section>
+				<section>
+					We're not the first...<br/>
+					<small class="fragment">Control engineering or control systems engineering is the engineering discipline that applies control theory to design systems with desired behaviors. The practice uses sensors to measure the output performance of the device being controlled and those measurements can be used to give feedback to the input actuators that can make corrections toward desired performance. When a device is designed to perform without the need of human inputs for correction it is called automatic control (such as cruise control for regulating the speed of a car). Multi-disciplinary in nature, control systems engineering activities focus on implementation of control systems mainly derived by mathematical modeling of systems of a diverse range.</small>
+					<small class="fragment">cf <a href="https://en.wikipedia.org/wiki/Control_engineering">Wikipedia - Control engineering</a></small>
+				</section>
+				<section>
+					<h1>WORDS</h1>
+					<small class="fragment">"The practice uses sensors to measure the output performance of the device being controlled and those measurements can be used to give feedback to the input actuators that can make corrections toward desired performance. When a device is designed to perform without the need of human inputs for correction it is called automatic control ..." </small>
+					<small class="fragment">cf <a href="https://en.wikipedia.org/wiki/Control_engineering">Wikipedia - Control engineering</a></small>
+				</section>
+				<section>
+					How does this help us?<br/>
+					<ul>
+						<li class="fragment">Gives us a framework within which to think for some of the problems</li>
+						<li class="fragment">Know that it's not fruitless</li>
+					</ul>
+				</section>
+				<section>
+					Some Problems<br/>
+					<ul>
+						<li class="fragment">Alert fatigue</li>
+						<li class="fragment">Lack of data</li>
+						<li class="fragment">Plenty of data</li>
+						<li class="fragment">....but the wrong data</li>
+					</ul>
+				</section>
+				<section>
+					Some More Problems<br/>
+					<ul>
+						<li class="fragment">Lack of insight</li>
+						<li class="fragment">Fixed Thresholds</li>
+						<li class="fragment">Behaviour Changes</li>
+					</ul>
+				</section>
+
+				<section>What it could possibly look like?</section>
+				<section>
+					<a href="images/tirefirebillow.gif"><img src="images/tirefirebillow.gif"/></a>
+				</section>
+				<section>
+					<a href="images/pandas.gif"><img src="images/pandas.gif"/></a>
+				</section>
+				<section>
+					<a href="images/crow-riding.gif"><img src="images/crow-riding.gif"/></a>
+				</section>
+				<section>
+					<a href="images/weird-cat.gif"><img src="images/weird-cat.gif"/></a>
+				</section>
+				<section>
+					<a href="images/exploding-kitten.png"><img src="images/exploding-kitten.png"/></a>
+				</section>
+				<section>
+					Ways to get better<br/>
+					<ul>
+						<li class="fragment">USE method</li>
+						<li class="fragment">My Philosophy on Alerting</li>
+						<li class="fragment">SRE</li>
+						<li class="fragment">Look to others</li>
+					</ul>
+				</section>
+				<section>
+					More ways<br/>
+					<ul>
+						<li class="fragment">APM</li>
+						<li class="fragment">Tooling</li>
+						<li class="fragment">Review!</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
