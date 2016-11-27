@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>PyconZA Video</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<img data-src="pics/sponsor-slides.png" style="background: background"/>
+				</section>
+				<section>PyconZA Video</section>
+				<section>
+					<section>You've (maybe) heard of it</section>
+					<section>You've (maybe) heard of us</section>
+					<section>
+						<h2>5W1H</h2>
+						<p class="fragment">What is it?</p>
+						<p class="fragment">Why?</p>
+						<p class="fragment">When?</p>
+						<p class="fragment">Where?</p>
+						<p class="fragment">Who?</p>
+						<p class="fragment">How?</p>
+					</section>
+				</section>
+				<section>
+					<h2>What?</h2>
+					<p class="fragment">Recording of all talks, including the slides</p>
+					<small class="fragment">in 720p</small>
+				</section>
+				<section>
+					<h2>Why?</h2>
+					<ul class="fragment">Because we have some really cool speakers and talks</ul>
+					<ul class="fragment">Because not everyone could make it</ul>
+					<ul class="fragment">To put them on the Internet!</ul></br>
+					<ul class="fragment">Not an exhaustive list</ul>
+				</section>
+				<section>
+					<h2>When/Where?</h2>
+					<p class="fragment">All the time!</p>
+					<p class="fragment">3 main talk/tutorial rooms (unfortunately not open spaces)</p>
+				</section>
+				<section>
+					<h2>Who?</h2>
+					<p>A whole bunch, and first special thanks to the daytime volunteers who get suckered into doing this</p>
+					<ul class="fragment">tumbleweed / Stefano</ul><br/>
+					<ul class="fragment">paddatrapper / Kyle</ul><br/>
+					<ul class="fragment">Graham</ul><br/>
+					<ul class="fragment">Sicelo</ul><br/>
+					<ul class="fragment">froztbyte / JP (/ me)</ul><br/>
+				</section>
+				<section>
+					<h2>How?</h2>
+					<p class="fragment">This is the fun part :D</p>
+				</section>
+				<section>
+					<img data-src="pics/room-layout-1.svg" width="1100px" style="background: white"/>
+				</section>
+				<section>
+					<img data-src="pics/room-layout-2.svg" width="180%" style="background: white"/>
+				</section>
+				<section>
+					<a href="https://github.com/voc/voctomix">Voctomix</a></br>
+					<small class="fragment">Thanks Germans (CCC teams)</small>
+					<p class="fragment">https://github.com/voc/voctomix</p></br>
+				</section>
+				<section>
+					<a href="https://code.timvideos.us/home/">TimVideos</a></br>
+					<small class="fragment">Thanks TimVideos</small>
+					<p class="fragment">https://code.timvideos.us/home/</p></br>
+				</section>
+				<section>
+					<p>What goes wrong?</p>
+					<li class="fragment">chromebooks don't like modes</li>
+					<li class="fragment">rebooting board is needed</li>
+					<li class="fragment">mode differences between outputs</li>
+					<li class="fragment">VGA (yes, in 2016)</li>
+					<li class="fragment">different GPU</li>
+				</section>
+				<section>
+					<p>What else goes wrong?</p>
+					<li class="fragment">software happens</li>
+					<li class="fragment">ffmpeg just ... stops</li>
+					<li class="fragment">other recording pipelines aren't as well tested</li>
+					<li class="fragment">capture board in the shape of a webcam, supplies MJPEG</li>
+					<li class="fragment">firmware (can be) an issue</li>
+				</section>
+				<section>
+					<p>Are we done yet?</p>
+					<li class="fragment">Power trips/breaks/whatever</li>
+					<li class="fragment">Audio levels</li>
+					<li class="fragment">Camera bumps</li>
+					<li class="fragment">Batteries</li>
+					<li class="fragment">Running out of volunteers</li>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
