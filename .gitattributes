@@ -1,0 +1,5 @@
+devopsdays-cpt-2016/images/crow-riding.gif filter=lfs diff=lfs merge=lfs -text
+devopsdays-cpt-2016/images/pandas.gif filter=lfs diff=lfs merge=lfs -text
+devopsdays-cpt-2016/images/tirefirebillow.gif filter=lfs diff=lfs merge=lfs -text
+devopsdays-cpt-2016/images/weird-cat.gif filter=lfs diff=lfs merge=lfs -text
+devopsdays-cpt-2016/images/exploding-kitten.png filter=lfs diff=lfs merge=lfs -text
